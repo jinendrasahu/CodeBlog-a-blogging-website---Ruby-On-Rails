@@ -1,0 +1,16 @@
+<br>
+<hr>
+<h2>Comments</h2>
+<% @post.comments.each do |comment| %>
+
+<div class="blog">
+<div class="img">
+<div class="in">
+<span class="name"><b><%= comment.username %></b></span>
+<span class="bd"><p><%= comment.body %></p></span>
+<span><%= link_to "Delete",[comment.post,comment],method: :delete,data:{confirm:"Are You want to delete this post?"},class:'dell' %>
+</span></div>
+
+</div>
+</div>
+<% end %>

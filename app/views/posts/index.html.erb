@@ -1,0 +1,23 @@
+
+<div class="container">
+
+<div class="col1"></div>
+<div class="col2">
+<h1>All Posts</h1>
+<% @posts.each do |post| %>
+ 
+ <div class="blog">
+<div class="img">
+<div class="pr"></div>
+<div class="in">
+<span class="name"><%= post.title %></span>
+<span class="bd"><%= post.body %></span>
+<%= link_to "Read More",post_path(post) ,class:'post' %>
+</div>
+
+</div>
+</div>
+<% end %>
+</div>
+<div class="col3"></div>
+</div>

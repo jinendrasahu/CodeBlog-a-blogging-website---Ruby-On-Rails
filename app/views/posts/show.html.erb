@@ -1,0 +1,11 @@
+<div class="postblock">
+<div class="newblog">
+<h1>Posted By :<%= @post.title %></h1>
+<p> <%= @post.body %> </p>
+<%= link_to "Edit",edit_post_path(@post) ,class:'post' %>
+<%= link_to "Delete",post_path(@post),method: :delete,data:{confirm:"Are You want to delete this post?"},class:'del' %><br>
+<div>
+<%= render 'comments/comments' %>
+<%= render 'comments/form' %>
+
+</div>

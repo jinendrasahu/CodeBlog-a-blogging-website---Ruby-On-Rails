@@ -1,0 +1,13 @@
+<div class="postblock">
+<div class="newblog">
+<h2>Create Post</h2>
+<%= form_for :post,url:posts_path do |f|  %>
+  
+    <%= f.label :title %><br/>
+    <%= f.text_field :title ,class:'inp' %><br>
+    <%= f.label :body %><br/>
+    <%= f.text_area :body ,class:'inpp' %><br>
+    <%= f.submit :'Save Post' ,class:'post up' %>
+<% end %>
+<div>
+</div> 

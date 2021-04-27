@@ -1,0 +1,18 @@
+<div class="postblock">
+<div class="newblog">
+<h2>Edit Post</h2>
+<%= form_for :post,url:post_path(@post),method: :patch do |f|  %>
+    
+
+    <%= f.label :title %><br/>
+    <%= f.text_field :title ,class:'inp' %><br>
+    <%= f.label :body %><br/>
+    <%= f.text_area :body ,class:'inpp' %><br>
+    <%= f.submit :'Update Post' ,class:'post up' %>
+<% end %>
+<div>
+</div>
+
+
+
+
